@@ -1,0 +1,186 @@
+/* 声明字体 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+          url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+          url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+          url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+body {
+    background-image: url(../images/body_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* 搜索框 */
+#search {
+    margin-top: 50px;
+    margin-left: 5%;
+    position: relative;
+}
+
+#search input {
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.158);
+    text-align: center;
+    font: 300 normal 20px "微软雅黑";
+}
+
+#search span {
+    font: 400 normal 30px "icomoon";
+    position: absolute;
+    left: 355px;
+    top: 7px;
+}
+
+/* 鼠标移动到搜索图标时，修改鼠标样式为小手*/
+#search span:hover {
+    cursor: pointer;
+}
+
+#search a {
+    text-decoration: none;
+    color: rgba(62, 58, 60, 0.712);
+    transition: all 0.5s;
+}
+
+#search a:hover {
+    color: rgb(62, 58, 60);
+}
+
+#content {
+    margin-top: 20px;
+}
+
+/* 歌单 */
+#songList {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(212, 192, 174, 0.445);
+    border-radius: 20px;
+    margin-left: 7%;
+    float: left;
+    position: relative;
+}
+
+/* 播放列表 */
+#songList #listName {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: darksalmon;
+}
+
+#songList ul {
+    list-style: none;
+}
+
+#songList ul li {
+    display: block;
+    height: 35px;
+    color: rgba(0, 0, 0, 0.705);
+    position: relative;
+    line-height: 35px;
+    transition: all 0.5s;  
+    /* 对所有样式都进行缓动 */
+}
+
+#songList ul li:nth-child(2n) {
+    background-color: rgba(49, 26, 18, 0.075);
+}
+
+#songList ul li:hover {
+    background-color: rgba(49, 26, 18, 0.205);
+    color: rgba(0, 0, 0, 0.986);
+}
+
+#songList ul li span {
+    text-align: center;
+    font:400 normal 18px "微软雅黑";
+}
+
+#songList ul li .songName {
+    margin-left: 10px;
+    font-family: 'YouYuan';
+}
+
+#songList .listName_ul {
+    width: 330px;
+    height: 390px;
+    overflow: auto;
+}
+
+#songList ul li .singerName {
+    font-size: 14px;
+    font-family: 'LiSu';
+    position: absolute;
+    right: 30px;
+    line-height: 35px;
+}
+
+/* 控制标识符 */
+#songList #control {
+    position: absolute;
+    bottom: 10px;
+}
+
+#songList #control span {
+    font: 400 normal 30px "icomoon";
+    float: left;
+    margin-left: 20px;
+    float: left;
+}
+
+#songList #control #center {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* 歌词 */
+.lyric {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(219, 216, 211, 0.466);
+    border-radius: 20px;
+    margin-left: 30%;
+    float: left;
+}
+
+.lyric .lyricText {
+    width: 330px;
+    height: 450px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.lyric ul {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.lyric ul li {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "STLiti";
+    color: lightpink;
+}
