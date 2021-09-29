@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>音乐播放器——播放列表</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' type='text/css' href="./css/index.css">
-</head>
-
-<body>
+  <body>
     <div id="search">
-        <input type='text'>
-        <span><a href="search.html"></a></span>
+      <input type="text" />
+      <span><a href="search.html"></a></span>
     </div>
 
     <div id="content">
-        <div id="songList">
+      <div id="songList">
+        <div id="listName">播放列表</div>
 
-            <div id="listName">播放列表</div>
+        <ul class="listName_ul">
+          <li>
+            <span class="songName">无畏</span>
+            <span class="singerName">毛不易</span>
+          </li>
+          <li>
+            <span class="songName">海阔天空</span>
+            <span class="singerName">陈曼</span>
+          </li>
+          <li>
+            <span class="songName">李禄波，快递给我零食</span>
+            <span class="singerName">席文洁</span>
+          </li>
+          <li>
+            <span class="songName">李禄波，快递给我零食</span>
+            <span class="singerName">黄雪冰</span>
+          </li>
+        </ul>
 
-            <ul class='listName_ul'>
-                <li>
-                    <span class='songName'>无畏</span>
-                    <span class='singerName'>毛不易</span>
-                </li>
-                <li>
-                    <span class='songName'>海阔天空</span>
-                    <span class='singerName'>陈曼</span>
-                </li>
-                <li>
-                    <span class='songName'>李禄波，快递给我零食</span>
-                    <span class='singerName'>席文洁</span>
-                </li>
-                <li>
-                    <span class='songName'>李禄波，快递给我零食</span>
-                    <span class='singerName'>黄雪冰</span>
-                </li>
-            </ul>
-
-            <div id="control">
-                <span id="left"></span>
-                <span id="center"></span>
-                <span id="right"></span>
-            </div>
-
+        <div id="control">
+          <span id="left"></span>
+          <span id="center"></span>
+          <span id="right"></span>
         </div>
+      </div>
 
-        <div class="lyric">
-            <div class='lyricText'>
-                <ul>
-                    <li>轻轻敲醒沉睡的心灵</li>
-                    <li>慢慢张开你的眼睛</li>
-                    <li>看看忙碌的世界是否依然孤独的转个不停</li>
-                    <li>春风不解风情</li>
-                    <li>吹动少年的心</li>
-                    <li>让昨日脸上的泪痕</li>
-                    <li>随记忆风干了</li>
-                    <li>抬头寻找天空的翅膀</li>
-                    <li>候鸟出现它的影迹</li>
-                    <li>带来远处的饥荒无情的战火依然存在的消息</li>
-                    <li>玉山白雪飘零</li>
-                    <li>燃烧少年的心</li>
-                    <li>使真情溶化成音符</li>
-                    <li>倾诉遥远的祝福</li>
+      <div class="lyric">
+        <div class="lyricText">
+          <ul>
+            <li>轻轻敲醒沉睡的心灵</li>
+            <li>慢慢张开你的眼睛</li>
+            <li>看看忙碌的世界是否依然孤独的转个不停</li>
+            <li>春风不解风情</li>
+            <li>吹动少年的心</li>
+            <li>让昨日脸上的泪痕</li>
+            <li>随记忆风干了</li>
+            <li>抬头寻找天空的翅膀</li>
+            <li>候鸟出现它的影迹</li>
+            <li>带来远处的饥荒无情的战火依然存在的消息</li>
+            <li>玉山白雪飘零</li>
+            <li>燃烧少年的心</li>
+            <li>使真情溶化成音符</li>
+            <li>倾诉遥远的祝福</li>
 
-                    <li>轻轻敲醒沉睡的心灵</li>
-                    <li>慢慢张开你的眼睛</li>
-                    <li>看看忙碌的世界是否依然孤独的转个不停</li>
-                    <li>春风不解风情</li>
-                    <li>吹动少年的心</li>
-                    <li>让昨日脸上的泪痕</li>
-                    <li>随记忆风干了</li>
-                    <li>抬头寻找天空的翅膀</li>
-                    <li>候鸟出现它的影迹</li>
-                    <li>带来远处的饥荒无情的战火依然存在的消息</li>
-                    <li>玉山白雪飘零</li>
-                    <li>燃烧少年的心</li>
-                    <li>使真情溶化成音符</li>
-                    <li>倾诉遥远的祝福</li>
-                </ul>
-            </div>
-
+            <li>轻轻敲醒沉睡的心灵</li>
+            <li>慢慢张开你的眼睛</li>
+            <li>看看忙碌的世界是否依然孤独的转个不停</li>
+            <li>春风不解风情</li>
+            <li>吹动少年的心</li>
+            <li>让昨日脸上的泪痕</li>
+            <li>随记忆风干了</li>
+            <li>抬头寻找天空的翅膀</li>
+            <li>候鸟出现它的影迹</li>
+            <li>带来远处的饥荒无情的战火依然存在的消息</li>
+            <li>玉山白雪飘零</li>
+            <li>燃烧少年的心</li>
+            <li>使真情溶化成音符</li>
+            <li>倾诉遥远的祝福</li>
+          </ul>
         </div>
+      </div>
     </div>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/scrollbot.js"></script>
-    <script src='./js/index.js'></script>
-
-</body>
-
+    <script src="./js/index.js"></script>
+  </body>
 </html>
