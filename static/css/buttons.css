@@ -1,0 +1,30 @@
+/* 声明字体 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?7kkyc2");
+  src: url("../fonts/icomoon.eot?7kkyc2#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?7kkyc2") format("truetype"),
+    url("../fonts/icomoon.woff?7kkyc2") format("woff"),
+    url("../fonts/icomoon.svg?7kkyc2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#control_div {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.control {
+  font: 500 normal 30px "icomoon";
+  float: left;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.486);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.control:hover {
+  color: rgba(0, 0, 0, 0.829);
+}

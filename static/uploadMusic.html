@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>音乐播放器——搜索</title>
-    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/uploadMusic.css" />
     <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/iziToast.min.css" />
+    <title>音乐播放器——上传</title>
   </head>
 
   <body>
-    <div id="search">
-      <input type="text" />
-      <span id="searchImg"></span>
-    </div>
+    <input type="file" id="upload_file" multiple />
 
-    <div id="search_result"></div>
+    <div id="choose_file"><span id="choose_file_span">选择上传文件</span></div>
+    <button id="upload_btn">上传</button>
     <div id="control_div">
       <a href="./index.html" class="control"></a>
       <a href="./search.html" class="control"></a>
@@ -24,6 +23,7 @@
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/scrollbot.js"></script>
-    <script src="./js/search.js"></script>
+    <script src="./js/iziToast.min.js"></script>
+    <script src="./js/uploadMusic.js"></script>
   </body>
 </html>

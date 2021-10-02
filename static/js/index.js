@@ -18,4 +18,6 @@ var customScroll2 = new scrollbot(".lyricText", 10).setStyle({
     "background": "rgb(0,0,0,0)"
 });
 
+// 暂停键
+
 

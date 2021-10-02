@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-image: url(../images/search_bg3.webp);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#upload_file {
+  display: none;
+}
+
+#choose_file {
+  width: 500px;
+  height: 200px;
+  margin: 150px auto 0px auto;
+  background-color: rgba(163, 152, 175, 0.685);
+  border-radius: 10px;
+  transition: all 0.8s;
+  color: rgb(221, 106, 133);
+}
+
+#choose_file:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#choose_file_span {
+  display: block;
+  line-height: 200px;
+  width: 500px;
+  text-align: center;
+}
+
+#upload_btn {
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin: 50px auto;
+  background-color: rgb(227, 221, 225);
+  color: rgba(0, 0, 0, 0.438);
+  font: 400 normal 16px "微软雅黑";
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+}
+
+#upload_btn:hover {
+  color: rgba(3, 3, 3, 0.705);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.message {
+  color: pink;
+}
+
+/* 往文件框中添加单个文件信息 ul */
+#file_list {
+  width: 480px;
+  height: 160px;
+  padding: 20px 0px 20px 0px;
+  overflow: auto;
+}
+
+#file_list li {
+  height: 20px;
+  margin: 10px;
+  text-align: left;
+}
+
+#file_list .order {
+  display: inline-block;
+  width: 20px;
+  margin-right: 23px;
+  margin-left: 20px;
+}
